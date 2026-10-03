@@ -1,0 +1,2 @@
+import { useVaultStore } from '../stores/vaultStore'
+export function InboxView() { const { knowledgeIndex, navigateToNote } = useVaultStore(); const notes = knowledgeIndex.filter((note) => note.relativePath.startsWith('00-Inbox/')); return <main className="editor-pane inbox-view"><h2>Inbox ({notes.length})</h2>{notes.map((note) => <button key={note.runtimeKey} onClick={() => void navigateToNote(note.relativePath)}><strong>{note.title}</strong><span>{String(note.metadata.createdAt ?? '')}</span></button>)}</main> }
