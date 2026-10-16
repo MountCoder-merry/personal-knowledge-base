@@ -33,7 +33,9 @@ Personal Knowledge Base 是一个面向 Windows 桌面环境的个人知识库�
 
 ## 截图
 
-当前仓库没有提交截图文件。可以按照下面的 Tauri 开发命令在本地预览应用。
+下面是使用 `npm run dev` 生成的真实浏览器预览截图。原生文件夹选择和文件系统操作需要通过 Tauri 桌面端运行。
+
+![Vault 对话框预览](./docs/preview-workspace.png)
 
 ## 技术栈
 
